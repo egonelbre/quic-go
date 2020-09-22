@@ -11,7 +11,6 @@ import (
 	"github.com/lucas-clemente/quic-go/internal/utils"
 	"github.com/lucas-clemente/quic-go/internal/wire"
 	"github.com/lucas-clemente/quic-go/logging"
-	"github.com/lucas-clemente/quic-go/quictrace"
 )
 
 const (
@@ -83,9 +82,8 @@ type sentPacketHandler struct {
 
 	perspective protocol.Perspective
 
-	traceCallback func(quictrace.Event)
-	tracer        logging.ConnectionTracer
-	logger        utils.Logger
+	tracer logging.ConnectionTracer
+	logger utils.Logger
 }
 
 var _ SentPacketHandler = &sentPacketHandler{}
@@ -95,7 +93,6 @@ func newSentPacketHandler(
 	initialPacketNumber protocol.PacketNumber,
 	rttStats *utils.RTTStats,
 	pers protocol.Perspective,
-	traceCallback func(quictrace.Event),
 	tracer logging.ConnectionTracer,
 	logger utils.Logger,
 ) *sentPacketHandler {
@@ -115,7 +112,6 @@ func newSentPacketHandler(
 		rttStats:                       rttStats,
 		congestion:                     congestion,
 		perspective:                    pers,
-		traceCallback:                  traceCallback,
 		tracer:                         tracer,
 		logger:                         logger,
 	}
@@ -563,21 +559,6 @@ func (h *sentPacketHandler) detectLostPackets(now time.Time, encLevel protocol.E
 		h.queueFramesForRetransmission(p)
 		// the bytes in flight need to be reduced no matter if this packet will be retransmitted
 		h.removeFromBytesInFlight(p)
-		if h.traceCallback != nil {
-			frames := make([]wire.Frame, 0, len(p.Frames))
-			for _, f := range p.Frames {
-				frames = append(frames, f.Frame)
-			}
-			h.traceCallback(quictrace.Event{
-				Time:            now,
-				EventType:       quictrace.PacketLost,
-				EncryptionLevel: p.EncryptionLevel,
-				PacketNumber:    p.PacketNumber,
-				PacketSize:      p.Length,
-				Frames:          frames,
-				TransportState:  h.GetStats(),
-			})
-		}
 	}
 	return lostPackets, nil
 }
@@ -816,16 +797,4 @@ func (h *sentPacketHandler) SetHandshakeConfirmed() {
 	// We don't send PTOs for application data packets before the handshake completes.
 	// Make sure the timer is armed now, if necessary.
 	h.setLossDetectionTimer()
-}
-
-func (h *sentPacketHandler) GetStats() *quictrace.TransportState {
-	return &quictrace.TransportState{
-		MinRTT:           h.rttStats.MinRTT(),
-		SmoothedRTT:      h.rttStats.SmoothedRTT(),
-		LatestRTT:        h.rttStats.LatestRTT(),
-		BytesInFlight:    h.bytesInFlight,
-		CongestionWindow: h.congestion.GetCongestionWindow(),
-		InSlowStart:      h.congestion.InSlowStart(),
-		InRecovery:       h.congestion.InRecovery(),
-	}
 }

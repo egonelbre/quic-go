@@ -1,0 +1,608 @@
+   2742597    2741673 /runtime [syms 1417]
+              1126640 R pclntab
+               458960 R types
+               458960 R rodata
+               101928 D mheap_
+                65760 D trace
+                16064 D semtable
+                16032 D cbs
+                10639 R findfunctab
+                10016 T callbackasm
+                 7040 T gentraceback
+                 5992 D memstats
+                 5896 R typelink
+                 5613 R gcbits.*
+                 5248 T selectgo
+                 4288 D waitReasonStrings
+                 4240 R epclntab
+                 4128 D staticuint64s
+                 4112 D itabTableInit
+                 4032 T typesEqual
+                 3936 T findrunnable
+                 3616 T newstack
+                 3488 T (*pageAlloc).find
+                 3072 T gcMarkTermination
+                 3008 T (*mspan).sweep
+                 2880 T schedtrace
+                 2880 T heapBitsSetType
+                 2816 T mallocgc
+                 2444 R gcbss
+                 2432 T printanycustomtype
+                 2208 T loadOptionalSyscalls
+                 2208 T (*mheap).allocSpan
+                 2144 D class_to_divmagic
+                 2112 T (*mheap).sysAlloc
+                 2112 T SetFinalizer
+                 2080 T scanstack
+                 2048 D consec8tab
+                 2016 D utf16ConsoleBack
+                 1984 T (*Frames).Next
+                 1984 T getStackMap
+                 1952 T gcStart
+                 1920 T growslice
+                 1888 T gopanic
+                 1856 T chanrecv
+                 1760 T moduledataverify1
+                 1760 T typelinksinit
+                 1728 T memmove
+                 1664 T typehash
+                 1664 T printany
+                 1664 T runGCProg
+                 1632 D gStatusStrings
+                 1632 T (*pageAlloc).update
+                 1600 T chansend
+                 1600 T procresize
+                 1568 T evacuate
+                 1568 T pcvalue
+                 1544 R itablink
+                 1536 T suspendG
+                 1536 T greyobject
+                 1536 T mapassign
+                 1504 T sysmon
+                 1504 D firstmoduledata
+                 1504 T dumpregs
+                 1408 T mapiternext
+                 1376 T gcMark
+                 1344 T modtimer
+                 1344 T (*pageAlloc).scavengeOne
+                 1312 T schedule
+                 1312 T (*TypeAssertionError).Error
+                 1312 T (*gcControllerState).endCycle
+                 1280 T gcBgMarkWorker
+                 1248 T bulkBarrierPreWrite
+                 1216 T checkdead
+                 1216 T (*addrRanges).add
+                 1216 T (*pageAlloc).sysGrow
+                 1216 T (*itab).init
+                 1216 T newproc1
+                 1216 T gcDumpObject
+                 1216 T mapaccess2_faststr
+                 1216 T gcDrain
+                 1184 T panicwrap
+                 1184 T evacuate_fast64
+                 1152 T casfrom_Gscanstatus
+                 1152 T (*mcentral).cacheSpan
+                 1152 T mapaccess1_faststr
+                 1152 T (*semaRoot).queue
+                 1152 D fastlog2Table
+                 1152 T adjustframe
+                 1120 T (*p).destroy
+                 1120 T clearDeletedTimers
+                 1120 T evacuate_faststr
+                 1120 T mapdelete
+                 1088 T mapassign_faststr
+                 1088 T check
+                 1088 T runfinq
+                 1056 T preemptM
+                 1056 T gcSetTriggerRatio
+                 1056 T evacuate_fast32
+                 1024 T isAsyncSafePoint
+                 1024 T (*pageAlloc).allocRange
+                 1024 D zeroVal
+                 1024 T scanobject
+    475440     475440 /type [syms 96]
+               458960 R *
+    280092     280092 /go [syms 43]
+               199718 R func.*
+                78038 R string.*
+    278280     278280 /github.com/marten-seemann/qtls-go1-15 [syms 482]
+                11904 T (*Conn).readRecordOrCCS
+                11008 T (*clientHelloMsg).marshal.func1.4
+                 8608 T (*clientHelloMsg).unmarshal
+                 7296 T (*serverHelloMsg).marshal.func1.2
+                 6368 T (*clientHandshakeState).doFullHandshake
+                 4896 T (*Conn).makeClientHello
+                 4672 T (*Conn).loadSession
+                 4256 T (*halfConn).encrypt
+                 3680 T (*serverHelloMsg).unmarshal
+                 3648 T (*certificateRequestMsgTLS13).marshal.func1.1
+                 3520 T (*Conn).clientHandshake
+                 3328 T (*clientHandshakeStateTLS13).processHelloRetryRequest
+                 3264 T (*halfConn).decrypt
+                 3040 T (*ecdheKeyAgreement).generateServerKeyExchange
+                 3040 T CipherSuites
+                 2976 T (*Conn).readHandshake
+                 2976 T (*Conn).handleNewSessionTicket
+                 2784 T (*ecdheKeyAgreement).processServerKeyExchange
+                 2624 T (*clientHandshakeStateTLS13).readServerCertificate
+                 2432 T (*certificateRequestMsgTLS13).unmarshal
+                 2304 T (*encryptedExtensionsMsg).marshal.func1.1
+                 2272 T (*Conn).verifyServerCertificate
+                 2112 T (*sessionStateTLS13).marshal
+                 2016 T (*clientHandshakeStateTLS13).sendClientCertificate
+                 2016 T (*clientHandshakeState).handshake
+                 1984 T (*Conn).Write
+                 1920 T (*serverHelloMsg).marshal.func1
+                 1856 T signatureSchemesForCertificate
+                 1824 T (*clientHandshakeStateTLS13).establishHandshakeKeys
+                 1792 T ekmFromMasterSecret.func1
+                 1760 T unsupportedCertificateError
+                 1760 T (*clientHandshakeStateTLS13).readServerFinished
+                 1696 T (*newSessionTicketMsgTLS13).unmarshal
+                 1696 T (*clientHandshakeState).processServerHello
+                 1696 T unmarshalCertificate
+                 1600 T verifyHandshakeSignature
+                 1600 T (*certificateRequestMsg).unmarshal
+                 1536 T compare
+                 1536 T (*clientHandshakeState).readSessionTicket
+                 1504 D .inittask
+                 1440 T (*encryptedExtensionsMsg).unmarshal
+                 1440 T (*clientHandshakeState).establishKeys
+                 1408 T (*sessionStateTLS13).unmarshal
+                 1408 T (*Conn).handleKeyUpdate
+                 1408 T (*Conn).encryptTicket
+                 1376 T marshalCertificate.func1.2
+                 1376 T (*clientHandshakeStateTLS13).processServerHello
+                 1376 T (*clientHelloMsg).marshal.func1.4.2
+                 1344 T (*Conn).writeRecordLocked
+                 1248 T (*clientHandshakeStateTLS13).readServerParameters
+                 1248 T (*certificateRequestMsg).marshal
+                 1248 T hkdfExpandLabel
+                 1216 T CipherSuiteName
+                 1184 T certificateRequestInfoFromMsg
+                 1184 T keysFromMasterSecret
+                 1184 T hkdfExpandLabel.func1
+                 1184 T (*clientHelloMsg).marshal.func1
+                 1152 T (*clientHandshakeStateTLS13).handshake
+                 1152 T generateECDHEParameters
+                 1088 T (*Conn).handleRenegotiation
+                 1088 T (*Conn).getSessionTicketMsg
+                 1056 T newFinishedHash
+                 1056 T (*clientHandshakeStateTLS13).checkServerHelloOrHRR
+                 1024 T (*Conn).decodeSessionState
+                 1024 T (*Conn).Read
+    366929     184489 /github.com/lucas-clemente/quic-go [syms 474]
+                 6144 T glob..func3
+                 5184 T (*session).handleSinglePacket
+                 4096 T (*session).run
+                 3232 T (*sendStream).Write
+                 3168 T (*session).handlePacketImpl
+                 2976 T (*receiveStream).readImpl
+                 2880 T (*session).preSetup
+                 2784 T (*frameSorter).push
+                 2720 T (*client).dial
+                 2688 T (*session).processTransportParametersImpl
+                 2656 T (*packetPacker).appendPacket
+                 2560 T (*packetPacker).PackConnectionClose
+                 2208 T (*session).handleRetryPacket
+                 2112 T (*packetPacker).maybeAppendCryptoPacket
+                 2080 T (*session).handleUnpackedPacket
+                 2016 T (*session).handleFrame
+                 1952 T (*connMultiplexer).AddConn
+                 1824 T (*framerI).AppendStreamFrames
+                 1824 T (*packetPacker).packCoalescedPacket
+                 1792 T (*session).handleVersionNegotiationPacket
+                 1792 T (*session).handleCloseError
+                 1696 T newClient
+                 1664 T (*packetHandlerMap).handlePacket
+                 1600 T (*outgoingBidiStreamsMap).OpenStreamSync
+                 1600 T (*outgoingUniStreamsMap).OpenStreamSync
+                 1568 T (*packetUnpacker).Unpack
+                 1472 T (*session).maybeResetTimer
+                 1312 T (*packetPacker).getSealerAndHeader
+                 1312 T (*packetPacker).maybeAppendAppDataPacket
+                 1280 T (*session).sendProbePacket
+                 1280 T dialContext
+                 1248 T newStreamsMap
+                 1216 T (*connIDManager).addConnectionID
+                 1184 T (*packetPacker).composeNextPacket
+                 1152 T (*session).logCoalescedPacket
+                 1152 T (*packetHandlerMap).AddWithConnID
+                 1120 T (*cryptoStreamImpl).HandleCryptoFrame
+                 1120 T (*session).sendPacket
+                 1056 T (*connIDGenerator).Retire
+                 1056 T newStream
+                 1056 T (*incomingBidiStreamsMap).GetOrOpenStream
+                 1056 T (*packetHandlerMap).maybeSendStatelessReset
+                 1056 T (*incomingUniStreamsMap).GetOrOpenStream
+                 1024 T (*packetContents).ToAckHandlerPacket
+     90752      90752 /reflect [syms 470]
+                 5760 T deepValueEqual
+                 3200 T FuncOf
+                 3072 T funcLayout
+                 2816 T (*structType).FieldByNameFunc
+                 2656 T haveIdenticalUnderlyingType
+                 2240 T implements
+                 2176 T funcStr
+                 1952 T (*rtype).Method
+                 1504 T convertOp
+                 1408 T addTypeBits
+                 1152 T Copy
+                 1088 T typesByString
+                 1056 T callMethod
+                 1056 T Value.assignTo
+                 1024 T methodReceiver
+                 1024 T (*rtype).ptrTo
+    101592      81112 /net [syms 230]
+                 3168 T init
+                 3008 T (*Resolver).internetAddrList
+                 3008 T (*Resolver).lookupIPAddr
+                 2784 T (*Resolver).lookupIP.func1
+                 2656 T (*netFD).connect
+                 2560 T (*netFD).dial
+                 2528 T IP.String
+                 2240 T (*Resolver).lookupPort
+                 1760 T (*netFD).listenDatagram
+                 1728 T SplitHostPort
+                 1632 T ipToSockaddr
+                 1472 T (*netFD).listenStream
+                 1472 T parseIPv6
+                 1280 T socket
+                 1280 T (*ipv6ZoneCache).update
+                 1184 T (*Resolver).lookupIP
+                 1120 T interfaceTable
+                 1056 T ListenUDP
+     74817      74817 /math/big [syms 107]
+                 5248 T nat.divRecursiveStep
+                 4288 T nat.expNNMontgomery
+                 3808 T nat.expNN
+                 3776 T (*Int).lehmerGCD
+                 3104 T nat.mul
+                 3072 T nat.expNNWindowed
+                 2592 D cacheBase10
+                 2528 T nat.sqr
+                 2400 T nat.scan
+                 2368 T karatsuba
+                 2176 T (*Int).Format
+                 1824 T divisors
+                 1792 T nat.convertWords
+                 1632 T (*Int).GCD
+                 1568 T karatsubaSqr
+                 1568 T nat.itoa
+                 1472 T nat.divBasic
+                 1440 T nat.divLarge
+                 1312 T nat.montgomery
+                 1184 T (*Int).ModInverse
+                 1184 T euclidUpdate
+                 1184 T nat.shl
+                 1184 T nat.div
+                 1152 T nat.add
+                 1056 T nat.sub
+                 1056 T nat.shr
+     83458      72058 /crypto/x509 [syms 115]
+                 8800 T parseCertificate
+                 5568 T parseNameConstraintsExtension.func1
+                 3360 T parsePublicKey
+                 3200 T (*Certificate).systemVerify
+                 2976 T (*Certificate).isValid
+                 2880 T (*Certificate).isValid.func1
+                 2752 T checkSignature
+                 2528 T (*Certificate).checkNameConstraints
+                 2304 T (*Certificate).buildChains.func1
+                 2080 T parseRFC2821Mailbox
+                 1920 T parseSANExtension.func1
+                 1888 T (*Certificate).Verify
+                 1792 T getSignatureAlgorithmFromAI
+                 1632 T parseNameConstraintsExtension
+                 1376 T HostnameError.Error
+                 1312 T (*Certificate).VerifyHostname
+                 1248 T (*Certificate).buildChains
+                 1184 T createStoreContext
+                 1056 T matchURIConstraint
+                 1024 T domainToReverseLabels
+     67496      67496 /time [syms 115]
+                15584 T parse
+                 8576 T Time.AppendFormat
+                 4384 T nextStdChunk
+                 1920 T tzset
+                 1632 T Date
+                 1568 T initLocalFromTZI
+                 1536 D .inittask
+                 1440 T init
+                 1248 T tzsetRule
+                 1216 T (*Time).UnmarshalBinary
+                 1152 T matchZoneKey
+                 1024 T tzruleTime
+     65424      65424 /github.com/lucas-clemente/quic-go/internal/wire [syms 143]
+                 7424 T LogFrame
+                 3680 T (*TransportParameters).unmarshal
+                 2176 T (*frameParser).parseFrame
+                 2176 D .inittask
+                 2048 T (*AckFrame).Length
+                 1984 T (*TransportParameters).Marshal
+                 1888 T (*ExtendedHeader).Log
+                 1888 T (*TransportParameters).String
+                 1824 T parseAckFrame
+                 1792 T (*Header).parseLongHeader
+                 1728 T (*TransportParameters).readPreferredAddress
+                 1568 T (*TransportParameters).readNumericTransportParameter
+                 1472 T parseNewConnectionIDFrame
+                 1184 T parseStreamFrame
+     64672      64672 /fmt [syms 68]
+                17024 D ppFree
+                 9824 T (*pp).printValue
+                 4512 T (*pp).doPrintf
+                 2496 T (*fmt).fmtFloat
+                 2400 T (*pp).printArg
+                 2304 T (*pp).fmtBytes
+                 1760 T (*pp).handleMethods
+                 1664 T (*pp).badVerb
+                 1536 T (*pp).catchPanic
+                 1504 T (*fmt).fmtSbx
+                 1472 T (*fmt).fmtInteger
+                 1408 T (*pp).fmtPointer
+     61408      61408 /crypto/ed25519/internal/edwards25519 [syms 42]
+                30720 D base
+                 7424 T ScMulAdd
+                 3360 T ScReduce
+                 2304 T FeMul
+                 1952 D bi
+                 1504 T GeDoubleScalarMultVartime
+                 1248 T (*ExtendedGroupElement).FromBytes
+                 1216 T GeScalarMultBase
+                 1184 T FeInvert
+                 1152 T fePow22523
+     61248      61248 /crypto/elliptic [syms 125]
+                 6496 T (*CurveParams).addJacobian
+                 4352 T p256Curve.Inverse
+                 4000 T (*p256Point).p256ScalarMult
+                 2656 T (*CurveParams).doubleJacobian
+                 2368 T p256Inverse
+                 2208 T p224AddJacobian
+                 1888 T p256PointAddAffineAsm
+                 1888 T p256PointAddAsm
+                 1568 T p224Invert
+                 1504 T initTable
+                 1440 T p256PointDoubleAsm
+                 1408 T p256Curve.CombinedMult
+                 1152 T (*p256Point).p256PointToAffine
+                 1120 T p224DoubleJacobian
+                 1088 T (*p256Point).p256BaseMult
+     57704      57704 /encoding/asn1 [syms 104]
+                14464 T parseField
+                 6048 T makeBody
+                 4736 T makeField
+                 2560 T appendTimeCommon
+                 1888 T parseFieldParameters
+                 1824 T makeBigInt
+                 1664 T parseTagAndLength
+                 1536 T parseSequenceOf
+                 1184 T getUniversalType
+                 1056 T parseUTCTime
+     51417      51417 /syscall [syms 307]
+                12992 T init
+                 2112 D errors
+                 1088 T LoadDLL
+     50168      50168 /github.com/lucas-clemente/quic-go/internal/handshake [syms 141]
+                 2912 T (*updatableAEAD).open
+                 2880 T newCryptoSetup
+                 2336 T (*cryptoSetup).SetWriteKey
+                 2208 T (*cryptoSetup).SetReadKey
+                 1536 T NewInitialAEAD
+                 1120 T (*cryptoSetup).HandleMessage
+                 1024 T hkdfExpandLabel
+     50001      50001 /golang.org/x/crypto/chacha20poly1305 [syms 27]
+                21024 T chacha20Poly1305Seal
+                18624 T chacha20Poly1305Open
+                 3008 R sseIncMask
+                 1440 T (*chacha20poly1305).openGeneric
+                 1344 T (*chacha20poly1305).sealGeneric
+                 1184 T (*chacha20poly1305).open
+     44713      44713 /strconv [syms 60]
+                 6880 D powersOfTen
+                 2816 T appendEscapedRune
+                 2400 T fmtX
+                 2400 T genericFtoa
+                 2176 T Unquote
+                 1856 T ParseUint
+                 1728 T fmtE
+                 1696 D float64info
+                 1696 T UnquoteChar
+                 1472 T formatBits
+                 1408 T (*extFloat).ShortestDecimal
+                 1280 T roundShortest
+                 1248 T ParseInt
+                 1216 T appendQuotedWith
+                 1088 T bigFtoa
+                 1088 T fmtF
+                 1056 T formatDigits
+                 1056 T (*extFloat).FixedDecimal
+     38146      38146 /crypto/aes [syms 54]
+                 9120 D te3
+                 5216 T gcmAesEnc
+                 3104 T gcmAesDec
+                 1664 T (*gcmAsm).Open
+                 1344 T (*gcmAsm).Seal
+                 1120 T gcmAesData
+                 1088 T decryptBlockGo
+                 1088 T encryptBlockGo
+                 1024 D te1
+                 1024 D td1
+                 1024 D td3
+                 1024 D td2
+                 1024 D te2
+                 1024 D te0
+                 1024 D td0
+     35872      35872 /github.com/lucas-clemente/quic-go/internal/ackhandler [syms 87]
+                 2336 T (*sentPacketHandler).ReceivedAck
+                 1824 T (*sentPacketHandler).getPTOTimeAndSpace
+                 1760 T (*sentPacketHandler).onVerifiedLossDetectionTimeout
+                 1504 T (*sentPacketHandler).detectLostPackets.func1
+                 1472 T (*sentPacketHandler).SendMode
+                 1408 T (*sentPacketHandler).ResetForRetry
+                 1344 T (*sentPacketHandler).detectAndRemoveAckedPackets
+                 1312 T newReceivedPacketHandler
+                 1312 T (*sentPacketHandler).detectLostPackets
+                 1248 T (*receivedPacketTracker).maybeQueueAck
+     27937      27937 /crypto/sha512 [syms 23]
+                16160 T blockAMD64
+                 3552 T blockAVX2
+                 1632 D .inittask
+                 1152 T (*digest).Sum
+                 1088 T (*digest).UnmarshalBinary
+     29048      24664 /unicode [syms 245]
+                21280 T init
+     24112      24112 /crypto/des [syms 25]
+                15264 D sBoxes
+                 2048 D feistelBox
+     22561      22561 /internal/poll [syms 70]
+                 2048 T (*FD).Init
+                 1632 T (*FD).writeConsole
+                 1568 T runtime_pollSetDeadline
+                 1376 T execIO
+                 1344 T (*FD).readConsole
+                 1216 T (*FD).Write
+     22520      22520 /crypto/rsa [syms 44]
+                 2592 T decrypt
+                 2016 T DecryptOAEP
+                 1856 T init
+                 1600 T VerifyPKCS1v15
+                 1504 T emsaPSSVerify
+                 1376 T SignPKCS1v15
+                 1312 T emsaPSSEncode
+                 1280 T (*PrivateKey).Decrypt
+                 1152 T EncryptPKCS1v15
+   5419138      22392  [syms 57]
+                 8192 R K256
+                 3680 R gcmPoly
+                 1376 T aeshashbody
+                 1312 R bswapMask
+     20480      20480 /net/url [syms 34]
+                 4320 T (*URL).String
+                 3072 T unescape
+                 2144 T parse
+                 1696 T parseHost
+                 1408 T parseAuthority
+                 1120 T escape
+     19345      19345 /crypto/sha256 [syms 17]
+                14496 T block
+                 1088 T (*digest).MarshalBinary
+     18080      18080 /internal/reflectlite [syms 68]
+                 2784 T haveIdenticalUnderlyingType
+                 2240 T implements
+                 1920 T Swapper
+     17985      17985 /crypto/sha1 [syms 21]
+                 7488 T blockAVX2
+                 4992 T blockAMD64
+     15944      15944 /math/rand [syms 22]
+                11232 D rngCooked
+     15600      14672 /sync [syms 56]
+                 1760 T (*Map).LoadOrStore
+                 1472 T (*Map).Store
+     14248      14248 /vendor/golang.org/x/crypto/cryptobyte [syms 30]
+                 3552 T (*Builder).AddASN1BigInt.func1
+                 2144 T (*String).ReadASN1Integer
+                 1824 T (*Builder).flushChild
+     12992      12992 /crypto/cipher [syms 33]
+                 1600 T (*gcm).Open
+                 1280 T (*cbcDecrypter).CryptBlocks
+                 1248 T (*gcm).Seal
+                 1152 T newGCMWithNonceAndTagSize
+     12632      12632 /golang.org/x/crypto/curve25519 [syms 25]
+                 6048 T ladderstep
+                 1536 T invert
+                 1024 T x25519
+     12064      12064 /crypto/ecdsa [syms 47]
+                 1824 T verifyGeneric
+                 1248 T Sign
+                 1184 T signGeneric
+     11936      11936 /strings [syms 25]
+                 1792 T Map
+                 1792 T Index
+                 1600 T Join
+     11400      11400 /crypto/x509/pkix [syms 22]
+                 2592 T (*Name).FillFromRDNSequence
+                 2496 T Name.ToRDNSequence
+                 2016 T RDNSequence.String
+                 1184 T Name.String
+                 1056 T init
+      9280       9280 /crypto/tls [syms 30]
+                 1856 T signatureSchemesForCertificate
+                 1760 T unsupportedCertificateError
+      8832       8832 /github.com/lucas-clemente/quic-go/internal/utils [syms 39]
+      8568       8568 /os [syms 49]
+      7712       7712 /internal/fmtsort [syms 8]
+                 4864 T compare
+                 1216 T Sort
+      7600       7600 /vendor/golang.org/x/net/dns/dnsmessage [syms 38]
+                 4800 T init
+      7392       7392 /github.com/lucas-clemente/quic-go/internal/flowcontrol [syms 31]
+                 2048 T (*streamFlowController).UpdateHighestReceived
+      6768       6768 /bytes [syms 24]
+                 2016 T Index
+      6592       6592 /github.com/lucas-clemente/quic-go/internal/congestion [syms 26]
+      6504       6504 /internal/syscall/windows/registry [syms 24]
+                 1152 T Key.GetMUIStringValue
+                 1120 T Key.ReadSubKeyNames
+      6064       6064 /sort [syms 18]
+                 1472 T doPivot_func
+                 1056 T symMerge
+      5704       5704 /context [syms 40]
+      5584       5584 /crypto/md5 [syms 14]
+                 2272 T block
+      5480       5480 /log [syms 10]
+                 2976 T (*Logger).formatHeader
+                 1152 T (*Logger).Output
+      5120       5120 /golang.org/x/crypto/chacha20 [syms 5]
+                 1856 T (*Cipher).xorKeyStreamBlocksGeneric
+                 1472 T (*Cipher).XORKeyStream
+     11504       4704 /internal/syscall/windows [syms 45]
+                 2912 T init
+      4472       4472 /golang.org/x/crypto/cryptobyte [syms 11]
+                 1824 T (*Builder).flushChild
+      4224       4224 /github.com/lucas-clemente/quic-go/internal/protocol [syms 26]
+     65504       4096 /crypto/ed25519 [syms 7]
+                 1472 T sign
+                 1184 T Verify
+      3752       3752 /internal/cpu [syms 13]
+                 1888 T processOptions
+                 1056 T doinit
+      3584       3584 /unicode/utf8 [syms 9]
+      3136       3136 /github.com/lucas-clemente/quic-go/internal/qerr [syms 13]
+      2712       2712 /$f64 [syms 324]
+      2704       2704 /errors [syms 9]
+                 1568 T As
+      2680       2680 /crypto/rand [syms 9]
+                 1024 T (*rngReader).Read
+      2496       2496 /crypto/hmac [syms 7]
+    411743       2208 /crypto [syms 12]
+      2032       2032 /internal/bytealg [syms 21]
+      1888       1888 /internal/singleflight [syms 5]
+      2000       1728 /io [syms 12]
+      1696       1696 /golang.org/x/crypto/hkdf [syms 4]
+      1648       1648 /golang.org/x/crypto/poly1305 [syms 8]
+      1600       1600 /crypto/rc4 [syms 6]
+     92346       1585 /math [syms 16]
+      1568       1568 /vendor/golang.org/x/crypto/poly1305 [syms 1]
+                 1568 D .inittask
+      1472       1472 /crypto/dsa [syms 5]
+                 1184 T Verify
+      1280       1280 /encoding/base64 [syms 8]
+      1200       1200 /bufio [syms 13]
+    645209          0 /github.com [syms 0]
+    366929          0 /github.com/lucas-clemente [syms 0]
+    278280          0 /github.com/marten-seemann [syms 0]
+    182344          0 /github.com/lucas-clemente/quic-go/internal [syms 0]
+     76498          0 /golang.org [syms 0]
+     76498          0 /golang.org/x [syms 0]
+     75569          0 /golang.org/x/crypto [syms 0]
+     68489          0 /internal [syms 0]
+     61408          0 /crypto/ed25519/internal [syms 0]
+     59688          0 /encoding [syms 0]
+     25583          0 /vendor/golang.org/x [syms 0]
+     25583          0 /vendor/golang.org [syms 0]
+     25583          0 /vendor [syms 0]
+     17209          0 /vendor/golang.org/x/crypto [syms 0]
+     11568          0 /internal/syscall [syms 0]
+      7600          0 /vendor/golang.org/x/net [syms 0]
+      7600          0 /vendor/golang.org/x/net/dns [syms 0]

@@ -10,7 +10,6 @@ import (
 
 	"github.com/lucas-clemente/quic-go/internal/handshake"
 	"github.com/lucas-clemente/quic-go/internal/protocol"
-	"github.com/lucas-clemente/quic-go/quictrace"
 )
 
 // RetireBugBackwardsCompatibilityMode controls a backwards compatibility mode, necessary due to a bug in
@@ -258,8 +257,7 @@ type Config struct {
 	KeepAlive bool
 	// QUIC Event Tracer.
 	// Warning: Experimental. This API should not be considered stable and will change soon.
-	QuicTracer quictrace.Tracer
-	Tracer     logging.Tracer
+	Tracer logging.Tracer
 }
 
 // A Listener for incoming QUIC connections
